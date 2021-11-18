@@ -1,7 +1,6 @@
 * {
 	font-family: "Courier New", monospace;
 	font-size: 16px;
-	background-color: white;
 }
 
 h {
@@ -29,6 +28,7 @@ p.output {
 .copyright {
 	font-size: 14px;
 	height: 14px;
+	background-color: white;
 }
 
 p.copyright {
