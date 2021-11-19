@@ -1,0 +1,38 @@
+* {
+	font-family: "Courier New", monospace;
+	font-size: 16px;
+}
+
+h {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+form {
+	font-size: 1.125em;
+}
+
+input {
+	font-size: 1em;
+}
+
+p.data {
+	font-size: 1em;
+}
+
+p.output {
+	font-size: 1.125em;
+	font-weight: bold;
+}
+
+.copyright {
+	font-size: 14px;
+	height: 14px;
+	background-color: white;
+}
+
+p.copyright {
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+}
