@@ -16,6 +16,10 @@ input {
 	font-size: 1em;
 }
 
+a {
+	font-weight: bold;
+}
+
 .copyright {
 	font-size: 14px;
 	height: 14px;
