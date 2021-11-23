@@ -11,9 +11,9 @@
 .navbar a {
 	float: left;
 	color: inherit;
-	padding: 13px 12px;
+	padding: 12px 12px;
 	text-decoration: none;
-	font-size: inherit;
+	font-size: 1.125em;
 	font-weight: inherit;
 	border-style: solid; 
 	border-color: black;
@@ -25,12 +25,11 @@
 .dropdown {
 	float: left;
 	overflow: hidden;
-	font-size: inherit;
 	background-color: inherit;
 }
 
 .dropdown .dropdown_button {
-	font-size: inherit;
+	font-size: 1.125em;
 	outline: none;
 	color: inherit;
 	padding: 12px 12px;
