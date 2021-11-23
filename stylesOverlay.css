@@ -18,12 +18,14 @@
 	border-color: black;
 	border-width: 1px;
 	z-index: 1;
+	background-color: inherit;
 }
 
 .dropdown {
 	float: left;
 	overflow: hidden;
 	font-size: inherit;
+	background-color: inherit;
 }
 
 .dropdown .dropdown_button {
