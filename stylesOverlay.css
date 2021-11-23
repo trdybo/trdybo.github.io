@@ -1,0 +1,115 @@
+.navbar {
+	overflow: hidden;
+	background-color: black;
+	color: white;
+	font-size: 1.125em;
+	font-weight: bold;
+	min-height: 10px;
+}
+
+.navbar a {
+	float: left;
+	color: inherit;
+	padding: 13px 12px;
+	text-decoration: none;
+	font-size: inherit;
+	font-weight: inherit;
+	border-style: solid; 
+	border-color: black;
+	border-width: 1px;
+	z-index: 1;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	font-size: inherit;
+}
+
+.dropdown .dropdown_button {
+	font-size: inherit;
+	outline: none;
+	color: inherit;
+	padding: 12px 12px;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+	font-weight: inherit;
+	border-style: solid; 
+	border-color: black;
+	border-width: 1px;
+}
+
+.navbar a:hover, .dropdown:hover .dropdown_button, .dropdown_content a:hover {
+	background-color: blue;
+	color: white;
+	border-style: solid; 
+	border-color: white;
+	border-width: 1px;
+}
+
+.dropdown_holder {
+	position: absolute;
+	z-index: 1;
+}
+
+.dropdown_content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 100px;
+	border-style: solid; 
+	border-color: black;
+	border-width: 1px;
+	border-top: none;
+	left: -1px;
+	padding: 1px;
+}
+
+.dropdown_content a {
+	float: none;
+	color: black;
+	padding: 12px 12px;
+	display: block;
+	text-align: left;
+	font-size: 0.875em;
+	text-decoration: none;
+	border-style: solid; 
+	border-color: white;
+	border-width: 1px;
+}
+
+.dropdown:hover .dropdown_content {
+	display: block;
+}
+
+p.caret {
+	font-size: 0.75em;
+	display: inline;
+}
+
+p.caret.up {
+	display: none;
+}
+
+.dropdown:hover p.caret.down {
+	display: none;
+}
+
+.dropdown:hover p.caret.up {
+	display: inline;
+}
+
+.copyright {
+	font-size: 14px;
+	height: 14px;
+	font-family: "Courier New", monospace;
+	background-color: white;
+}
+
+p.copyright {
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+	padding: 3px;
+}
