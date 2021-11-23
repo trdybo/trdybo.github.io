@@ -47,26 +47,25 @@ input {
 	font-size: 1em;
 	border-style: inset;
 	border-color: white;
-	background-color: #f8f8f8;
+	background-color: #f7f7f7;
 }
 
 div.button {
 	padding: 3px 0px;
 }
 
-button {
-	font-size: 1em;
+input[type=submit] {
 	border-style: outset;
-	border-color: white;
-	background-color: #f8f8f8;
 }
 
-button:hover, input:hover {
+input:hover {
 	border-color: #e0e0e0;
 	background-color: #f0f0f0;
 }
 
-button:active {
+input:active {
+	border-color: #e0e0e0;
+	background-color: #f0f0f0;
 	border-style: inset;
 }
 

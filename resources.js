@@ -5,6 +5,8 @@ function test(rand) {
 }
 
 function write(element, content = "", append = false) {
-	element = document.getElementById(element);
-	element.innerHTML = (append ? element.textContent : "") + content;
+	try {
+		element = document.getElementById(element);
+		element.innerHTML = (append ? element.textContent : "") + content;
+	} catch {}
 }
