@@ -6,15 +6,16 @@
 		<title>Random.org API</title>
 		<link href="/styles.css" rel="stylesheet" type="text/css"/>
 		<link href="/stylesOverlay.css" rel="stylesheet" type="text/css"/>
-		<link href="/Random/stylesRand.css" rel="stylesheet" type="text/css"/>
+		<link href="stylesRand.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
 		<div class="navbar">
 			<div>
-				<a href="/" target="_parent">Wyare Keep</a>
+				<a href="/">Wyare Keep</a>
 			</div>
 			<div class="dropdown">
-				<button class="dropdown_button">Menu
+				<button class="dropdown_button">
+					Menu
 					<p class="caret down">
 						&#x2BC6;
 					</p>
@@ -24,7 +25,8 @@
 				</button>
 				<div class="dropdown_holder">
 					<div class="dropdown_content">
-						<a href="/Random/" target="_parent">Random.org.api</a>
+						<a href="/Random/">Random.org API</a>
+						<a href="/Hasher/">Hasher Testing</a>
 					</div>
 				</div>
 			</div>
@@ -38,7 +40,7 @@
 				<br>
 				Min: <input type="number" id="min" value="0">
 				<div class="button">
-					<button type="submit">Generate Random</button>
+					<input type="submit" value="Generate Random"/>
 				</div>
 			</form>
 			
@@ -66,6 +68,6 @@
 			}
 		</script>
 		<script src="/resources.js" type="text/javascript"></script>
-		<script src="/Random/resourcesRand.js" type="text/javascript"></script>
+		<script src="resourcesRand.js" type="text/javascript"></script>
 	</body>
 </html>
