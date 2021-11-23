@@ -4,13 +4,13 @@
 	color: white;
 	font-size: 1.125em;
 	font-weight: bold;
-	min-height: 40px;
+	min-height: 10px;
 }
 
 .navbar a {
 	float: left;
 	color: inherit;
-	padding: 14px 12px;
+	padding: 12px 12px;
 	text-decoration: none;
 	font-size: inherit;
 	font-weight: inherit;
@@ -27,7 +27,6 @@
 
 .dropdown .dropdown_button {
 	font-size: inherit;
-	border: none;
 	outline: none;
 	color: inherit;
 	padding: 12px 12px;
@@ -48,6 +47,10 @@
 	border-width: 1px;
 }
 
+.dropdown_holder {
+	position: absolute;
+}
+
 .dropdown_content {
 	display: none;
 	position: absolute;
@@ -57,10 +60,8 @@
 	border-color: black;
 	border-width: 1px;
 	border-top: none;
-	/*
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	*/
+	left: -1px;
+	padding: 1px;
 }
 
 .dropdown_content a {
@@ -78,4 +79,35 @@
 
 .dropdown:hover .dropdown_content {
 	display: block;
+}
+
+p.caret {
+	font-size: 0.825em;
+	display: inline;
+}
+
+p.caret.up {
+	display: none;
+}
+
+.dropdown:hover p.caret.down {
+	display: none;
+}
+
+.dropdown:hover p.caret.up {
+	display: inline;
+}
+
+.copyright {
+	font-size: 14px;
+	height: 14px;
+	font-family: "Courier New", monospace;
+	background-color: white;
+}
+
+p.copyright {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 3px;
 }
