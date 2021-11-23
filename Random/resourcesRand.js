@@ -52,7 +52,7 @@ function restockRand() {
 		jsonrpc: "2.0",
 		method: "generateIntegers",
 		params: {
-			apiKey: "56aaec18-d654-4b2c-8840-d9cdf3d95396",
+			apiKey: "6c5f661c-93e1-47c4-ae89-d8984ef199e0",
 			n: 250,
 			min: 0,
 			max: 1,
