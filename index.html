@@ -32,8 +32,9 @@
 		</div>
 		
 		<div class="page">
+			<h2></h2>
 			<div class="button">
-					<input type="submit" value="This is a Pointless Button" onclick="return pointless();"/>
+					<input type="submit" value="This is a Pointless Button" style="font-size: 1.5em; font-weight: bold;" onclick="return pointless();"/>
 			</div>
 			<p class="output" id="response"></p>
 		</div>
@@ -45,7 +46,9 @@
 			
 			function pointless() {
 				clicks++;
-				if (clicks >= 50) {
+				if (clicks >= 100) {
+					write("response", "I'm Just Going To Ignore You Unitl Your Board, I Guess.");
+				} else if (clicks >= 50) {
 					write("response", "Alright, This Is Going To Far Now, Just Stop.");
 				} else if (clicks >= 15) {
 					write("response", "Stop Clicking I Mean It!");
