@@ -17,7 +17,9 @@
 	font-weight: inherit;
 	border-style: solid; 
 	border-color: black;
-	border-width: 1px;
+	border-width: 2px;
+	border-top: none;
+	border-bottom: none;
 	z-index: 1;
 	background-color: inherit;
 }
@@ -39,15 +41,15 @@
 	font-weight: inherit;
 	border-style: solid; 
 	border-color: black;
-	border-width: 1px;
+	border-width: 2px;
+	border-top: none;
+	border-bottom: none;
 }
 
 .navbar a:hover, .dropdown:hover .dropdown_button, .dropdown_content a:hover {
 	background-color: blue;
 	color: white;
-	border-style: solid; 
 	border-color: white;
-	border-width: 1px;
 }
 
 .dropdown_holder {
