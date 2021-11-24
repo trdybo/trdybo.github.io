@@ -4,9 +4,9 @@ function hash(input) {
 	if (input.length !== 0)
 	for (i = 0; i < input.length; i++) {
 		let charCode = input.charCodeAt(i);
-		hash = ((hash << 1) ^ charCode) * 7;
+		hash = Math.pow(((hash << 1) ^ ((~charCode) * 3)), 2) * 7;
 	}
 	
 	localStorage.setItem('open', true);	  
-	return hash;	
+	return (~hash);
 }
