@@ -7,6 +7,5 @@ function hash(input) {
 		hash = Math.pow(((hash << 1) ^ ((~charCode) * 3)), 2) * 7;
 	}
 	
-	localStorage.setItem('open', true);	  
-	return (~hash);
+	return (~hash).toString(16);
 }

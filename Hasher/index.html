@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Wyare Keep</title>
+		<title>Wyare Keep - Hasher Testing</title>
 		<link href="/styles.css" rel="stylesheet" type="text/css"/>
 		<link href="/stylesOverlay.css" rel="stylesheet" type="text/css"/>
 	</head>
@@ -26,6 +26,7 @@
 					<div class="dropdown_content">
 						<a href="/Random/">Random.org API</a>
 						<a href="/Hasher/">Hasher Testing</a>
+						<a href="/Password/">Pswd Required Test</a>
 					</div>
 				</div>
 			</div>
@@ -52,7 +53,10 @@
 				
 				
 					if (form == "hash") {
-						write("hash", hash(document.getElementById("pswd").value) + ", " + hash(document.getElementById("pswd").value).toString(16) + ", " + hash(document.getElementById("pswd").value).toString(2));
+						write("hash", hash(document.getElementById("pswd").value));
+						localStorage.setItem('open', true);	  
+					} else {
+						localStorage.setItem('open', true);
 					}
 				}
 				

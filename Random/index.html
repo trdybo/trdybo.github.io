@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Random.org API</title>
+		<title>Random.org API - Random.org API</title>
 		<link href="/styles.css" rel="stylesheet" type="text/css"/>
 		<link href="/stylesOverlay.css" rel="stylesheet" type="text/css"/>
 		<link href="stylesRand.css" rel="stylesheet" type="text/css"/>
@@ -27,6 +27,7 @@
 					<div class="dropdown_content">
 						<a href="/Random/">Random.org API</a>
 						<a href="/Hasher/">Hasher Testing</a>
+						<a href="/Password/">Pswd Required Test</a>
 					</div>
 				</div>
 			</div>
@@ -61,6 +62,8 @@
 					if (form == "rand") {
 						write("bits");
 						getRand(document.getElementById("max").value, document.getElementById("min").value);
+					} else {
+						localStorage.setItem('open', true);
 					}
 				}
 				

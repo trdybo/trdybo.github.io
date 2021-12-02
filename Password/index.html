@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Wyare Keep</title>
+		<title>Wyare Keep - Pswd Required Test</title>
 		<link href="/styles.css" rel="stylesheet" type="text/css"/>
 		<link href="/stylesOverlay.css" rel="stylesheet" type="text/css"/>
 	</head>
-	<body>
+	<body onload="requirePassword(&quot;/Password/&quot;,&quot;-2872ae81&quot;)">
 		<div class="navbar">
 			<div>
 				<a href="/">Wyare Keep	</a>
@@ -33,30 +33,12 @@
 		</div>
 		
 		<div class="page">
-			<h2></h2>
-			<div class="button">
-					<input type="submit" value="This is a Pointless Button" style="font-size: 1.5em; font-weight: bold;" onclick="return pointless();"/>
-			</div>
-			<p class="output" id="response"></p>
+			<h1>Password Requirement Testing</h1>
 		</div>
 		
 		<p class="copyright" xmlns:cc="http://creativecommons.org/ns#">This work by <span class="copyright" property="cc:attributionName">Trevor Bosman</span> is licensed under <a class="copyright" href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img class="copyright" style="margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img class="copyright" style="margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img class="copyright" style="margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img class="copyright" style="margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
 
 		<script>
-			let clicks = 0;
-			
-			function pointless() {
-				clicks++;
-				if (clicks >= 100) {
-					write("response", "I'm Just Going To Ignore You Unitl You're Board, I Guess.");
-				} else if (clicks >= 50) {
-					write("response", "Alright, This Is Going To Far Now, Just Stop.");
-				} else if (clicks >= 15) {
-					write("response", "Stop Clicking I Mean It!");
-				} else if (clicks >= 5) {
-					write("response", "Stop, Please");
-				}
-			}
 		</script>
 		<script src="/resources.js" type="text/javascript"></script>
 	</body>
