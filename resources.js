@@ -12,9 +12,15 @@ function write(element, content = "", append = false) {
 }
 
 function requirePassword (returnTo = "/", hashCheck = "-a804001") {
+	document.getElementsByClassName("page")[0].style.visibility = "hidden";
 	if (!localStorage.getItem('login') || (Date.now() - localStorage.getItem('login')) >= 10000) {
-		window.location.href = "/Login/";
-		localStorage.setItem('hashCheck', hashCheck)
-		localStorage.setItem('returnTo', returnTo)
+		
+		setTimeout(function() {
+			window.location.href = "/Login/";
+			localStorage.setItem('hashCheck', hashCheck)
+			localStorage.setItem('returnTo', returnTo)
+		}, 1000);
+	} else {
+		document.getElementsByClassName("page")[0].style.visibility = "visible";
 	}
 }
