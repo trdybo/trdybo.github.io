@@ -52,8 +52,8 @@
 				if (form == "hash") {
 					const hashed = hash(document.getElementById("pswd").value);
 					if (hashed.toString(16) == localStorage.getItem('hashCheck')) {
-						localStorage.setItem('login'), Date.now())
-						window.location.href = ("/" + localStorage.getItem('returnTo') + "/");
+						localStorage.setItem('login', Date.now())
+						window.location.href = (localStorage.getItem('returnTo'));
 					}
 				}
 				
