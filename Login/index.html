@@ -49,20 +49,13 @@
 		
 		<script>
 			function submitForm(form) {
-				// if (localStorage.getItem('open') == "true") {
-					localStorage.setItem('open', false);
-				
-					if (form == "hash") {
-						const hashed = hash(document.getElementById("pswd").value);
-						if (hashed.toString(16) == localStorage.getItem('hashCheck')) {
-							localStorage.setItem('login', Date.now())
-							window.location.href = localStorage.getItem('returnTo');
-						}
-						localStorage.setItem('open', true);
-					} else {
-						localStorage.setItem('open', true);
+				if (form == "hash") {
+					const hashed = hash(document.getElementById("pswd").value);
+					if (hashed.toString(16) == localStorage.getItem('hashCheck')) {
+						localStorage.setItem('login'), Date.now())
+						window.location.href = ("/" + localStorage.getItem('returnTo') + "/");
 					}
-				// }
+				}
 				
 				return false;
 			}

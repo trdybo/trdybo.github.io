@@ -71,3 +71,11 @@ input:active {
 
 a {
 }
+
+img {
+	max-height: 200px;
+	max-width: 200px;
+	vertical-align: middle;
+	margin: 10px 0px;
+	
+}
